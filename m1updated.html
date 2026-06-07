@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Flowerhill Ventures – Event Management</title>
+<meta name="description" content="Flowerhill Ventures – Professional wedding and event management in Malaysia. Mencipta Kenangan, Merealisasikan Impian.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar" id="navbar">
+  <a href="#" class="logo">
+    <img src="logo.jpeg" alt="Flowerhill Ventures" class="logo-img">
+    <div class="logo-words">
+      <span class="logo-main">Flowerhill Ventures</span>
+      <span class="logo-tagline" data-en="Event Management" data-my="Pengurusan Acara">Event Management</span>
+    </div>
+  </a>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#" data-en="Home" data-my="Utama">Home</a></li>
+    <li><a href="#about" data-en="About Us" data-my="Tentang Kami">About Us</a></li>
+    <li><a href="#services" data-en="Services" data-my="Perkhidmatan">Services</a></li>
+    <li><a href="#gallery" data-en="Gallery" data-my="Galeri">Gallery</a></li>
+    <li><a href="#contact" class="nav-cta" data-en="Contact Us" data-my="Hubungi Kami">Contact Us</a></li>
+    <!-- Mobile-only lang toggle inside nav -->
+    <li>
+      <div class="lang-toggle lang-toggle-mobile" style="display:none;">
+        <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+        <button class="lang-btn" data-lang="my" onclick="setLang('my')">BM</button>
+      </div>
+    </li>
+  </ul>
+
+  <!-- Desktop lang toggle -->
+  <div class="lang-toggle" id="langToggleDesktop">
+    <button class="lang-btn active" data-lang="en" onclick="setLang('en')">EN</button>
+    <button class="lang-btn" data-lang="my" onclick="setLang('my')">BM</button>
+  </div>
+
+  <button class="hamburger" id="hamburger" onclick="toggleNav()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="pic3.jpeg" alt="Wedding setup" class="hero-bg-img">
+    <div class="hero-overlay"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-logo-wrap">
+      <img src="logo.jpeg" alt="Flowerhill Ventures" class="hero-logo">
+    </div>
+    <p class="hero-pre" data-en="— Wedding & Corporate Events —" data-my="— Majlis Perkahwinan & Korporat —">— Wedding & Corporate Events —</p>
+    <h1 class="hero-title" data-en="Flowerhill Ventures" data-my="Flowerhill Ventures">Flowerhill Ventures</h1>
+    <p class="hero-motto" data-en='"Creating Memories, Realising Dreams"' data-my='"Mencipta Kenangan, Merealisasikan Impian"'>"Mencipta Kenangan, Merealisasikan Impian"</p>
+    <p class="hero-sub" data-en="Every Moment, Perfected." data-my="Setiap Detik, Disempurnakan.">Every Moment, Perfected.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-primary" data-en="Plan Your Event" data-my="Rancang Majlis Anda">Plan Your Event</a>
+      <a href="#gallery" class="btn-outline" data-en="View Our Work" data-my="Lihat Kerja Kami">View Our Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT US -->
+<section class="about" id="about">
+  <div class="about-layout">
+    <div class="about-text-col">
+      <p class="section-pre" data-en="About Us" data-my="Tentang Kami">About Us</p>
+      <h2 class="about-title">Flowerhill Ventures</h2>
+      <p class="about-lead" data-en="Flowerhill Ventures is a professional Event Management company providing planning, coordination and execution services for all types of events." data-my="Flowerhill Ventures merupakan syarikat pengurusan acara yang menyediakan perkhidmatan perancangan, penyelarasan dan pelaksanaan pelbagai jenis acara secara profesional.">Flowerhill Ventures is a professional Event Management company providing planning, coordination and execution services for all types of events.</p>
+      <p class="about-body" data-en="We are committed to helping clients realise their dream events with creative, organised and quality solutions. With a trusted vendor network and innovative ideas, we ensure every occasion runs flawlessly and leaves meaningful memories." data-my="Kami komited untuk membantu pelanggan merealisasikan majlis impian dengan penyelesaian yang kreatif, teratur dan berkualiti. Dengan rangkaian vendor yang dipercayai dan idea inovatif, kami memastikan setiap acara berjalan lancar dan meninggalkan kenangan yang bermakna.">We are committed to helping clients realise their dream events with creative, organised and quality solutions. With a trusted vendor network and innovative ideas, we ensure every occasion runs flawlessly and leaves meaningful memories.</p>
+      <div class="about-motto-inline">
+        <span class="ami-line"></span>
+        <em data-en='"Creating Memories, Realising Dreams"' data-my='"Mencipta Kenangan, Merealisasikan Impian"'>"Mencipta Kenangan, Merealisasikan Impian"</em>
+        <span class="ami-line"></span>
+      </div>
+    </div>
+    <div class="about-cards-col">
+      <div class="vm-block vision-block">
+        <span class="vm-eyebrow" data-en="Our Vision" data-my="Visi Kami">Our Vision</span>
+        <p data-en="To become Malaysia's most trusted event management company — delivering quality, creativity and high-impact experiences." data-my="Menjadi syarikat pengurusan acara yang paling dipercayai di Malaysia — memberikan kualiti, kreativiti dan pengalaman berimpak tinggi.">To become Malaysia's most trusted event management company — delivering quality, creativity and high-impact experiences.</p>
+      </div>
+      <div class="vm-block mission-block">
+        <span class="vm-eyebrow" data-en="Our Mission" data-my="Misi Kami">Our Mission</span>
+        <ul class="mission-list">
+          <li data-en="Professional, quality event management services." data-my="Perkhidmatan pengurusan acara yang profesional dan berkualiti.">Professional, quality event management services.</li>
+          <li data-en="Thorough planning and effective execution for every event." data-my="Perancangan teliti dan pelaksanaan berkesan untuk setiap acara.">Thorough planning and effective execution for every event.</li>
+          <li data-en="Creative and innovative solutions for the best client experience." data-my="Penyelesaian kreatif dan inovatif untuk pengalaman pelanggan terbaik.">Creative and innovative solutions for the best client experience.</li>
+          <li data-en="Long-term relationships with clients and strategic partners." data-my="Hubungan jangka panjang dengan pelanggan dan rakan strategik.">Long-term relationships with clients and strategic partners.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="why-strip">
+    <p class="section-pre center" data-en="Why Choose Us" data-my="Kenapa Memilih Kami">Why Choose Us</p>
+    <h2 class="why-title" data-en="Why Choose Us?" data-my="Kenapa Memilih Kami?">Why Choose Us?</h2>
+    <div class="why-row">
+      <div class="why-item">
+        <span class="why-num">01</span>
+        <span class="why-text" data-en="Professional Service" data-my="Perkhidmatan Profesional">Professional Service</span>
+      </div>
+      <div class="why-divider"></div>
+      <div class="why-item">
+        <span class="why-num">02</span>
+        <span class="why-text" data-en="Affordable Pricing" data-my="Harga Berpatutan">Affordable Pricing</span>
+      </div>
+      <div class="why-divider"></div>
+      <div class="why-item">
+        <span class="why-num">03</span>
+        <span class="why-text" data-en="Experienced Team" data-my="Pasukan Berpengalaman">Experienced Team</span>
+      </div>
+      <div class="why-divider"></div>
+      <div class="why-item">
+        <span class="why-num">04</span>
+        <span class="why-text" data-en="One Stop Solution" data-my="Penyelesaian Menyeluruh">One Stop Solution</span>
+      </div>
+      <div class="why-divider"></div>
+      <div class="why-item">
+        <span class="why-num">05</span>
+        <span class="why-text" data-en="Creative & Innovative" data-my="Kreatif & Inovatif">Creative &amp; Innovative</span>
+      </div>
+      <div class="why-divider"></div>
+      <div class="why-item">
+        <span class="why-num">06</span>
+        <span class="why-text" data-en="Client Satisfaction" data-my="Kepuasan Pelanggan">Client Satisfaction</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <div class="section-header">
+    <p class="section-pre" data-en="What We Offer" data-my="Apa Yang Kami Tawarkan">What We Offer</p>
+    <h2 data-en="Our Services" data-my="Perkhidmatan Kami">Our Services</h2>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">💍</span>
+      <h3 data-en="Wedding" data-my="Perkahwinan">Wedding</h3>
+      <p data-en="Full-scale wedding coordination — from venue and décor to catering and entertainment — crafted for your perfect day." data-my="Penyelarasan majlis perkahwinan sepenuhnya — dari venue dan dekorasi hingga katering dan hiburan — untuk hari istimewa anda.">Full-scale wedding coordination — from venue and décor to catering and entertainment — crafted for your perfect day.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💐</span>
+      <h3 data-en="Engagement" data-my="Pertunangan">Engagement</h3>
+      <p data-en="Beautifully styled engagement ceremonies with bespoke floral setups, photography and seamless on-day coordination." data-my="Majlis pertunangan yang indah dengan persediaan bunga khas, fotografi dan penyelarasan hari majlis yang lancar.">Beautifully styled engagement ceremonies with bespoke floral setups, photography and seamless on-day coordination.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🎉</span>
+      <h3 data-en="Private Events" data-my="Acara Persendirian">Private Events</h3>
+      <p data-en="Intimate birthdays, anniversaries, family gatherings and private celebrations — every detail handled with care." data-my="Majlis hari jadi, ulang tahun, perjumpaan keluarga dan perayaan persendirian — setiap butiran dijaga dengan teliti.">Intimate birthdays, anniversaries, family gatherings and private celebrations — every detail handled with care.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🤝</span>
+      <h3 data-en="Teambuilding" data-my="Pembinaan Pasukan">Teambuilding</h3>
+      <p data-en="Engaging corporate teambuilding programmes designed to strengthen bonds, boost morale and energise your team." data-my="Program pembinaan pasukan korporat yang menarik untuk memperkukuh hubungan, meningkatkan semangat dan menggembleng tenaga pasukan anda.">Engaging corporate teambuilding programmes designed to strengthen bonds, boost morale and energise your team.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="section-header">
+    <p class="section-pre" data-en="Our Work" data-my="Kerja Kami">Our Work</p>
+    <h2 data-en="Gallery" data-my="Galeri">Gallery</h2>
+  </div>
+  <div class="gallery-grid">
+    <div class="gallery-item gi-large" onclick="openLightbox('WhatsApp_Image_2026-06-07_at_1_00_28_PM.jpeg')">
+      <img src="pic3.jpeg" alt="Wedding floral setup with cream sofa">
+      <div class="gallery-overlay"><span data-en="View Photo" data-my="Lihat Foto">View Photo</span></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('WhatsApp_Image_2026-06-07_at_1_00_28_PM__1_.jpeg')">
+      <img src="pic2.jpeg" alt="Pink flower arrangement along wedding aisle">
+      <div class="gallery-overlay"><span data-en="View Photo" data-my="Lihat Foto">View Photo</span></div>
+    </div>
+    <div class="gallery-item" onclick="openLightbox('WhatsApp_Image_2026-06-07_at_1_00_28_PM__2_.jpeg')">
+      <img src="pic1.jpeg" alt="Bridal bouquet on decorated sofa">
+      <div class="gallery-overlay"><span data-en="View Photo" data-my="Lihat Foto">View Photo</span></div>
+    </div>
+  </div>
+  <p class="gallery-caption" data-en="Real events. Real moments. Crafted by Flowerhill Ventures." data-my="Acara sebenar. Detik sebenar. Dicipta oleh Flowerhill Ventures.">Real events. Real moments. Crafted by Flowerhill Ventures.</p>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lb-close" onclick="closeLightbox()">✕</button>
+  <img id="lb-img" src="" alt="">
+</div>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <div class="contact-inner">
+    <p class="section-pre" data-en="Get In Touch" data-my="Hubungi Kami">Get In Touch</p>
+    <h2 data-en="Let's Create Your Perfect Moment" data-my="Mari Cipta Detik Sempurna Anda">Let's Create Your Perfect Moment</h2>
+    <p class="contact-sub" data-en="Ready to plan your dream event? Reach out to us on WhatsApp or drop us an email." data-my="Bersedia merancang acara impian anda? Hubungi kami melalui WhatsApp atau e-mel.">Ready to plan your dream event? Reach out to us on WhatsApp or drop us an email.</p>
+
+    <div class="contact-wa-group">
+      <a class="btn-whatsapp" href="https://wa.me/601155833865" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <div class="wa-info">
+          <span class="wa-name">Aida</span>
+          <span class="wa-num">+6011-5583 3865</span>
+        </div>
+      </a>
+      <a class="btn-whatsapp" href="https://wa.me/60196107117" target="_blank">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <div class="wa-info">
+          <span class="wa-name">Khalidi</span>
+          <span class="wa-num">+6019-610 7117</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="contact-info-row">
+      <div class="ci-item">
+        <span class="ci-icon">📧</span>
+        <div>
+          <span class="ci-label" data-en="Email" data-my="Emel">Email</span>
+          <a href="mailto:flowerhillventures@gmail.com?subject=Event%20Enquiry%20–%20Flowerhill%20Ventures&body=Hello%20Flowerhill%20Ventures%2C%0A%0AI%20would%20like%20to%20enquire%20about%20your%20event%20management%20services.%0A%0AEvent%20Type%3A%0ADate%3A%0AGuest%20Count%3A%0AAdditional%20Details%3A%0A%0AThank%20you." class="ci-value">flowerhillventures@gmail.com</a>
+        </div>
+      </div>
+      <div class="ci-item">
+        <span class="ci-icon">🌐</span>
+        <div>
+          <span class="ci-label" data-en="Website" data-my="Laman Web">Website</span>
+          <a href="http://www.flowerhillventures.com" target="_blank" class="ci-value">www.flowerhillventures.com</a>
+        </div>
+      </div>
+      <div class="ci-item ci-address">
+        <span class="ci-icon">📍</span>
+        <div>
+          <span class="ci-label" data-en="Address" data-my="Alamat">Address</span>
+          <span class="ci-value" data-en="G66, Perdana Avenue, Jalan Kajang Perdana 3A, Taman Kajang Perdana, 43000 Kajang, Selangor" data-my="G66, Perdana Avenue, Jalan Kajang Perdana 3A, Taman Kajang Perdana, 43000 Kajang, Selangor">G66, Perdana Avenue, Jalan Kajang Perdana 3A, Taman Kajang Perdana, 43000 Kajang, Selangor</span>
+        </div>
+      </div>
+      <div class="ci-item">
+        <span class="ci-icon">🏢</span>
+        <div>
+          <span class="ci-label" data-en="Company Registration Number" data-my="Nombor Pendaftaran Syarikat">Company Registration Number</span>
+          <span class="ci-value ci-block">Flowerhill Ventures</span>
+          <span class="ci-value ci-block">202503202192 (CA0406580-V)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <img src="logo.jpeg" alt="Flowerhill Ventures" class="footer-logo-img">
+      <div class="footer-brand-text">
+        <span class="footer-company">Flowerhill Ventures</span>
+        <span class="footer-regno" data-en="Reg: 202503202192 (CA0406580-V)" data-my="No. Pendaftaran: 202503202192 (CA0406580-V)">Reg: 202503202192 (CA0406580-V)</span>
+        <em class="footer-motto" data-en='"Creating Memories, Realising Dreams"' data-my='"Mencipta Kenangan, Merealisasikan Impian"'>"Mencipta Kenangan, Merealisasikan Impian"</em>
+      </div>
+    </div>
+    <div class="footer-links">
+      <h4 data-en="Quick Links" data-my="Pautan Pantas">Quick Links</h4>
+      <a href="#" data-en="Home" data-my="Utama">Home</a>
+      <a href="#about" data-en="About Us" data-my="Tentang Kami">About Us</a>
+      <a href="#services" data-en="Services" data-my="Perkhidmatan">Services</a>
+      <a href="#gallery" data-en="Gallery" data-my="Galeri">Gallery</a>
+      <a href="#contact" data-en="Contact Us" data-my="Hubungi Kami">Contact Us</a>
+    </div>
+    <div class="footer-contact">
+      <h4 data-en="Contact Us" data-my="Hubungi Kami">Contact Us</h4>
+      <a href="https://wa.me/601155833865" target="_blank">📞 +6011-5583 3865 (Aida)</a>
+      <a href="https://wa.me/60196107117" target="_blank">📞 +6019-610 7117 (Khalidi)</a>
+      <a href="mailto:flowerhillventures@gmail.com?subject=Event%20Enquiry%20–%20Flowerhill%20Ventures">📧 flowerhillventures@gmail.com</a>
+      <a href="http://www.flowerhillventures.com" target="_blank">🌐 www.flowerhillventures.com</a>
+      <p>📍 G66, Perdana Avenue, Jalan Kajang Perdana 3A, Taman Kajang Perdana, 43000 Kajang, Selangor</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Flowerhill Ventures. <span data-en="All Rights Reserved." data-my="Hak Cipta Terpelihara.">All Rights Reserved.</span></p>
+  </div>
+</footer>
+
+<script src="script1.js"></script>
+</body>
+</html>
